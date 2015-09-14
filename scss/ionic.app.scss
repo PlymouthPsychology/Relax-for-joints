@@ -1,0 +1,70 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+
+$assertive:                       #33cd5f !default;
+
+
+$font-family-sans-serif:          "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+$font-family-light-sans-serif:    "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
+$font-family-serif:               serif !default;
+$font-family-monospace:           monospace !default;
+
+$font-family-base:                $font-family-sans-serif !default;
+
+
+$font-size-base:                  22px !default;
+$font-size-large:                 28px !default;
+$font-size-small:                 20px !default;
+
+
+$line-height-base:                1.43 !default; // 20/14
+$line-height-computed:            floor($font-size-base * $line-height-base) !default; // ~20px
+$line-height-large:               1.33 !default;
+$line-height-small:               1.5 !default;
+
+
+.emphasise {
+	font-size: 1.2em; 
+	font-family-base: $font-family-light-sans-serif; 
+	line-height: 1.1em;}
+
+
+
+.item-divider {font-size: 18px !important;}
+
+
+
+$tabs-height:                     79px !default;
+$tabs-text-font-size:             18px !default;
+$tabs-text-font-size-side-icon:   14px !default;
+$tabs-icon-size:                  52px !default;
+$tabs-badge-padding:              1px 6px !default;
+$tabs-badge-font-size:            12px !default;
+
+
+
+
+
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+

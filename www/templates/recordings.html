@@ -1,0 +1,46 @@
+<ion-view view-title="Audio">
+  <ion-content>
+    <ion-list>
+
+      <div class="item item-divider">
+      Audiobook version of the app
+      </div>
+
+      <ion-item class="item-icon-right" ng-repeat="recording in recordings.category('audiobook')" type="item-text-wrap" href="#/tab/recordings/{{recording.id}}">
+        <div style="width:50px; height:50px;background-color:{{recording.color}}; float:left; margin-right:1em;"></div>
+        <h2>{{recording.title}}</h2>
+        <p>{{recording.description}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+
+      <div class="item item-divider">
+      Relaxation recordings
+      </div>
+      
+      <ion-item class="item-icon-right" ng-repeat="recording in recordings.category('relax')" type="item-text-wrap" href="#/tab/recordings/{{recording.id}}">
+        <div style="width:50px; height:50px;background-color:{{recording.color}}; float:left; margin-right:1em;"></div>
+        <h2>{{recording.title}}</h2>
+        <p>{{recording.description}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+      <div class="item item-divider">
+      Positive suggestions
+      </div>
+
+
+      <ion-item class="item-icon-right" ng-repeat="recording in recordings.category('suggest')" type="item-text-wrap" href="#/tab/recordings/{{recording.id}}">
+        
+        <div style="width:50px;height:50px;background-color:{{recording.color}}; float:left; margin-right:1em;"></div>
+        
+        <h2>{{recording.title}}</h2>
+        <p>{{recording.description}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

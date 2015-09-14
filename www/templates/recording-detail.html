@@ -1,0 +1,26 @@
+
+<ion-view view-title="Recordings">
+  <ion-nav-bar>
+    <ion-nav-back-button class="button-clear" >
+      <i class="ion-arrow-left-c"></i> Back
+    </ion-nav-back-button>
+
+  </ion-nav-bar>
+
+<ion-content has-bouncing="false">
+  <ion-item 
+     style="height:100%; background-color: {{recording.color}};">
+    <h2 style="color:{{getContrastTextColor(textcolor)}} !important;">{{recording.title}}</h2>
+      <p style="color:{{getContrastTextColor(textcolor)}} !important;">{{recording.description}}</p>
+        <ion-audio-track track="recording">
+          <ion-audio-controls>
+          <a class="button button-icon icon" ion-audio-play></a>
+          </ion-audio-controls>
+          <ion-audio-progress-bar display-time></ion-audio-progress-bar>
+        </ion-audio-track>
+  </ion-item>
+
+
+
+</ion-content>
+</ion-view>

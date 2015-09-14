@@ -1,0 +1,113 @@
+<ion-view view-title="Positive imagery">
+  <ion-content class="padding">
+<div on-swipe-left="turnpage('forward')">  
+  <div class="card">
+
+    <div class="item item-divider">
+        Using positive imagery and suggestion
+    </div>
+
+    <div class="item-body">
+
+      <img class="full-image" src="img/federer.jpg">
+
+      <marked>
+        > What we expect to happen can have a strong influence our experience. This is particularly true for pain.  
+
+
+        Pain can seem simple: it's the sensation we feel when we injure ourselves.
+
+        But pain is ***not*** this simple. To experience pain, we need more than just signals from the body. We also need to interpret these signals as *dangerous*. 
+
+        This is why relaxing can help reduce pain: when we relax we find bodily sensations less threatening, and less painful. 
+
+      </marked>
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="item item-divider">
+        Changing expectations and experience
+    </div>
+
+    <div class="item-body">
+      <marked> 
+
+        There are many ways to change our expectations, and therefore our experience of pain.  
+
+        One common technique is to think of an outcome we would like (for example, for our pain to slowly subside), and focus our attention on this. 
+
+        Imagining things doesn't always make them come true — if it did we would all be lottery winners! But our brains and bodies are tightly connected and have a strong influence on each other. Many scientific studies have shown that pain and nausea can be reduced by a substantial amount in this way. 
+
+        > We are able to change how we experience pain, sensations from our body, and how we move, by listening and responding to positive suggestions.
+      </marked>
+
+    </div>
+  </div>
+
+  
+   <div class="card">
+    
+    <div class="item item-divider">
+        Audio recordings of positive suggestions
+    </div>
+
+    <div class="item-body">
+      <marked> 
+        Sometimes, listening to a recording can help visualise the positive outcome, and focus our attention. In this app we provide recordings of positive suggestions.
+
+        We have worked with many patients to make sure the suggestions are just right for patients after joint surgery. The recordings are designed to:
+
+        - Reduce pain
+        - Increase comfort in the joint
+        - Reduce nausea after surgery (if needed)
+
+      </marked>
+    </div>
+  </div>
+
+
+  <div class="card">
+    
+    <div class="item item-divider">
+        A simple example
+    </div>
+
+    <div class="item-body">
+       
+       <marked>
+        In the recording below, we ask you to listen and respond to some suggestions about how your body feels. The speaker suggests that your body feels heavy and warm. 
+
+        Listen to the suggestions and notice how they make you feel.  
+
+        Most people are able to respond to suggestions like this. If you feel yourself responding, it's likely this type of suggestion can help you as you recover from surgery.
+        
+      </marked>
+
+  </div>
+</div>
+
+
+<div class="card">
+
+
+<ion-item>
+<h3>{{recs.suggestion_example.title}}</h3>
+<p>{{recs.suggestion_example.description}}</p>
+<ion-audio-track track="recs.suggestion_example">
+  <ion-audio-controls>
+  <a class="button button-icon icon" ion-audio-play></a>
+  </ion-audio-controls>
+  <ion-audio-progress-bar display-time></ion-audio-progress-bar>
+</ion-audio-track>
+</ion-item>
+
+  </div>
+
+  <a class="button button-full button-assertive icon-right ion-chevron-right" href="#/tab/recordings">Use the full audio recordings</a>
+
+
+</div>
+</div>
+  </ion-content>
+</ion-view>      
